@@ -1,0 +1,60 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+
+//common css components
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.mod_head{
+    height:53px;
+     letter-spacing: .2em;
+    .mod_site-title{
+        width:200px;
+        float:left;
+        height:100%;
+        font-family:Helvetica,Arial,sans-serif;
+        font-weight:600;
+        color:rgb(46, 46, 46);
+        line-height: 53px;
+        padding:0 10px;
+        font-size:1em;
+        a{
+            text-decoration:none;
+            color:rgb(46, 46, 46);
+            text-transform: uppercase;
+           
+
+          }
+        }
+
+        .mod_nav{
+              float: right;
+              line-height: 53px;
+              height: 100%;
+              padding: 0 10px;
+            .trigger{
+               font-size:.85em;
+              a{
+                text-decoration: none;
+                color: #2e2e2e;
+                text-transform: uppercase;
+                padding: 0 10px;
+                font-weight:600;
+              }
+            }
+
+        }
+    }
