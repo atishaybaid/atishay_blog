@@ -68,3 +68,35 @@ $mod_break_small:768px;
 .mod-page-content{
   background-color: #f5f8fa;
 }
+
+
+.mod-home{
+    font-family:Helvetica,Arial,sans-serif;
+    letter-spacing: 0.01rem;
+  .mod-page-heading{
+   
+     font-size:4em;
+     text-align:center;
+  }
+  .mod-post-list{
+    .post-link{
+      font-size: 1.75rem;
+      text-decoration:underline;
+      color:rgb(17, 17, 17);
+      &:hover{
+        color: #007199;
+      }
+    }
+    .mod-desc{
+      font-family: "Merriweather", serif;
+      a{
+        text-decoration:none;
+         color:rgb(17, 17, 17);
+         &:hover{
+        color: #007199;
+      }
+
+      }
+    }
+  }
+}

@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home mod-home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading mod-page-heading">Posts</h1>
   
   {{ content }}
 
-  <ul class="post-list">
+  <ul class="post-list mod-post-list">
     {% for post in site.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -17,7 +17,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <p class="desc">{{ post.desc}} </p>
+        <p class="desc mod-desc"><a href="{{ post.url | relative_url }}">{{ post.desc}}<a></p>
       </li>
     {% endfor %}
   </ul>
