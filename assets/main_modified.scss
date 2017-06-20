@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+
+
 $mod_break_small:768px;
 
 //common css components
@@ -24,7 +26,7 @@ $mod_break_small:768px;
     border-bottom: 1px solid #e8e8e8;
 
     .mod_site-title{
-        width:200px;
+        width:300px;
         float:left;
         height:100%;
         font-family:Helvetica,Arial,sans-serif;
@@ -40,6 +42,15 @@ $mod_break_small:768px;
            
 
           }
+        .social-icon{
+          font-size:1.3em;
+          padding:3x;
+          transition:font-size .2s ease-in-out;
+          &:hover{
+            cursor:pointer;
+            font-size:1.7em;
+            }
+        }
         }
 
         .mod_nav{
