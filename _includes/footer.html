@@ -1,0 +1,73 @@
+<footer class="mod-footer site-footer">
+
+  <!-- <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div> 
+
+    </div>
+
+  </div> -->
+   {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+  <div class="mod_site-title">
+  <i class="fa fa-copyright" aria-hidden="true"></i>
+    <span>2017</span>
+      <a class="" href="{{ "/" | relative_url }}">Atishay Baid</a>
+    </div>
+    <div class="mod_footer-social">
+     <a class="social-link" href="mailto:{{ site.email }}">
+        <i class="fa fa-envelope-o social-icon" aria-hidden="true"></i>
+      </a>
+      <a class="social-link" href="/feed.xml">
+        <i class="fa fa-rss social-icon" aria-hidden="true"></i>
+      </a>
+      <a class="social-link" href="//twitter.com/atishaybaid">
+        <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+      </a>
+      <a class="social-link" href="https://www.linkedin.com/in/atishay-baid-7b17a447/">
+        <i class="fa fa-linkedin-square social-icon" aria-hidden="true"></i>
+      </a>
+      <a class="social-link" href="//github.com/atishaybaid">
+        <i class="fa fa-github social-icon" aria-hidden="true"></i>
+      </a>
+      
+
+    </div>
+
+</footer>
