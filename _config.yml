@@ -31,3 +31,11 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+#including static images
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
