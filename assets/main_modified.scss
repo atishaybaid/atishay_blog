@@ -118,6 +118,7 @@ $mod_break_small:768px;
 .mod-footer{
   height:53px;
   padding:0px !important;
+
   .mod_site-title{
         width:300px;
         float:left;
@@ -127,6 +128,9 @@ $mod_break_small:768px;
         line-height: 53px;
         padding:0 10px;
         font-size:.7em;
+        @media screen and (max-width:$mod_break_small){
+                width:60%;
+              }
         a{
             text-decoration:none;
             color:rgb(46, 46, 46);
@@ -146,6 +150,9 @@ $mod_break_small:768px;
   .mod_footer-social{
     width:120px;
     float:right;
+    @media screen and (max-width:$mod_break_small){
+                width:30%;
+              }
      a{
         text-decoration:none;
         color:rgb(46, 46, 46);
@@ -186,12 +193,17 @@ $mod_break_small:768px;
     font-size: 3rem;
     letter-spacing: 0.03rem;
     font-weight:600;
+
+    @media screen and (max-width:$mod_break_small){
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    }
   }
 
   .description{
     color: #aaa;
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight:300;
     font-style:italic;
     margin-bottom:60px;
@@ -200,8 +212,15 @@ $mod_break_small:768px;
 
   .about-text{
     float: left;
-     width: 75%;
+     width: 65%;
+     padding:0 10px;
      text-align:left;
+     @media screen and (max-width:$mod_break_small){
+      padding:0 5px;
+      width:100%;
+      text-align:center;
+
+      }
      p{
       line-height: 1.8em;
       font-family: serif;
@@ -214,23 +233,41 @@ $mod_break_small:768px;
         font-weight: 600;
         text-align: left;
         margin-bottom: 10px;
+        @media screen and (max-width:$mod_break_small){
+          text-align:center;
+        }
 
      }
   }
   .contact-list{
     float: left;
     width:25%;
+     padding:0 10px;
+      @media screen and (max-width:$mod_break_small){
+      padding:0 5px;
+      width:100%;
+      text-align:center;
+      }
     h4{
       font-size: 20px;
       text-decoration: none;
       color: #2e2e2e;
       font-weight: 600;
       text-align: left;
+      @media screen and (max-width:$mod_break_small){
+          text-align:center;
+        }
     }
 
      .social-link-list{
       list-style-type:none;
       margin-left:0px;
+      li{
+        @media screen and (max-width:$mod_break_small){
+          display: inline-block;
+          padding: 12px;
+        }
+      }
       .social-link{
         text-decoration: none;
         color: #2e2e2e;
@@ -239,7 +276,7 @@ $mod_break_small:768px;
           text-decoration:underline;
         }
         .social-icon{
-          font-size:26px;
+          font-size:1.6rem;
         }
       }
      }
